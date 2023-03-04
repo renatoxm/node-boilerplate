@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "nodemon",
-    "start": "node -r ./bootstrap.js build/server.js",
+    "start": "NODE_ENV=production node -r ./build/server.js",
     "build": "tsc --build tsconfig.build.json",
     "prepare": "husky install",
     "lint": "eslint \"./src/**/*.ts\"",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/renatoxm/node-boilerplate#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "pino": "^8.11.0"
   },
