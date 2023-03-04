@@ -4,8 +4,8 @@ import config from './config'
 
 const PORT = config.PORT
 
-const server = app.listen(4000, () => {
-  logger.info('Server started listening at http://localhost:4000')
+const server = app.listen(config.PORT, () => {
+  logger.info(`server listenning at http://localhost:${config.PORT}`)
 })
 
 server.on('error', (error: Error) => {
