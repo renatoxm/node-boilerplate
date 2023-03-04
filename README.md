@@ -2,6 +2,10 @@
 
 A Setup boilerplate with node.js project using express along with typescript including ESLint and Prettier to enforce code style, Husky and lint-staged to review our commits in addition to Mocha and Chai to write tests.
 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
 ## Dependencies
 
 - **Typescript:** This one allow us to use typescript in our project.
@@ -86,4 +90,4 @@ npm run test
 
 ## License
 
-MIT
+This project is licensed under the MIT license. For more information, see the [LICENSE](LICENSE.md) file.
