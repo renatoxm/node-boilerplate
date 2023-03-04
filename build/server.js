@@ -41,9 +41,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var app_1 = __importDefault(require("./app"));
 var logger_1 = __importDefault(require("./utils/logger"));
-var dotenv_1 = __importDefault(require("dotenv"));
-dotenv_1.default.config();
-var PORT = process.env.PORT || 3000;
+var config_1 = __importDefault(require("./config"));
+var PORT = config_1.default.PORT;
 var server = app_1.default.listen(4000, function () {
     logger_1.default.info('Server started listening at http://localhost:4000');
 });

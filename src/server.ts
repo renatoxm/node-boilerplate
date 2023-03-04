@@ -1,9 +1,8 @@
 import app from './app'
 import logger from './utils/logger'
-import dotenv from 'dotenv'
-dotenv.config()
+import config from './config'
 
-const PORT = process.env.PORT || 3000
+const PORT = config.PORT
 
 const server = app.listen(4000, () => {
   logger.info('Server started listening at http://localhost:4000')

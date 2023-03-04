@@ -1,9 +1,8 @@
 /* eslint-disable indent */
 import pino from 'pino'
-import dotenv from 'dotenv'
-dotenv.config()
+import config from '../config'
 
-const isDevelopment = process.env.NODE_ENV === 'development'
+const isDevelopment = config.NODE_ENV === 'development'
 
 const logger = isDevelopment
   ? pino({
